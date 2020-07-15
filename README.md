@@ -9,7 +9,7 @@ Ex2: PinUtil StartMenu "C:\Windows\System32\notepad.exe" "%windir%\System32\calc
 <br>
 Ex: PinUtil Config %windir%\System32\PintUtil.ini<br>
 <br>
-PinUtil.ini Limited To 9 Elements For TaskBar And StartMenu:<br>
+PinUtil.ini (Limited To 9 Elements For TaskBar And StartMenu):<br>
 > [PinUtil]<br>
 > StartMenu1=%AllPrograms%\Accessories\Paint.lnk<br>
 > StartMenu0=%WinDir%\Explorer.exe<br>
