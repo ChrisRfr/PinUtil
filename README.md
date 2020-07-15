@@ -16,6 +16,7 @@ TaskBar0=%SystemRoot%\System32\cmd.exe<br>
 TaskBar9=%SystemRoot%\Explorer.exe<br>
 <br><br>
 **Usage3:** Pecmd ConfigFile [SubSection (Default=PinUtil)]   (_SUB SubSection)<br>
+Pecmd is a command interpreter commonly used in WinPE (Windows PE)<br>
 <br>
 Ex: PinUtil Pecmd %windir%\System32\Pecmd.ini PinUtil<br>
 <br>
