@@ -23,7 +23,7 @@ Pecmd is a command interpreter commonly used in WinPE (Windows PE)<br>
 Ex: PinUtil Pecmd %windir%\System32\Pecmd.ini PinUtil<br>
 <br>
 Pecmd.ini:<br>
-> -SUB PinUtil<br>
+> _SUB PinUtil<br>
 > PINT %AllPrograms%\Accessories\Paint.lnk,StartMenu<br>
 > PINT %WinDir%\Explorer.exe,StartMenu<br>
 > PINT %SystemRoot%\System32\cmd.exe,TaskBar<br>
