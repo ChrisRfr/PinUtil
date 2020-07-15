@@ -27,7 +27,7 @@ PINT %SystemRoot%\System32\cmd.exe,TaskBar<br>
 PINT %SystemRoot%\Explorer.exe,TaskBar<br>
 <br><br>
 **Environment Variables are Available As Well As:**<br>
-%StartMenu% ($Start_Menu), %Programs%, %ALLPrograms%, %Desktop% ($Desktop), %QuickLaunch% ($Quick_Launch)<br>
+%StartMenu%, %Programs%, %ALLPrograms%, %Desktop%, %QuickLaunch%)<br>
 <br>
 **Support** StartIsback, Start10, Start8, Open-Shell, Classic Shell, Explorer7ForWin8, Windows 7 StartMenu<br>
 <br>
