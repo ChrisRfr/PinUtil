@@ -2,7 +2,7 @@
 
 **Usage1:** PinUtil (TaskBar|StartMenu) File ["File 2" "File 9"]<br>
 <br>
-Ex1: PinUtil TaskBar %windir%\System32\calc.exe"<br>
+Ex1: PinUtil TaskBar %windir%\System32\calc.exe<br>
 Ex2: PinUtil StartMenu "C:\Windows\System32\notepad.exe" "%windir%\System32\calc.exe"<br>
 <br>
 **Usage2:** PinUtil Config ConfigFile [Section (Default=PinUtil)]<br>
@@ -31,7 +31,7 @@ Pecmd.ini:<br>
 <br>
 
 **Environment Variables are Available As Well As:**<br>
-%StartMenu%, %Programs%, %ALLPrograms%, %Desktop%, %QuickLaunch%)<br>
+%StartMenu%, %Programs%, %ALLPrograms%, %Desktop%, %QuickLaunch%<br>
 <br>
 **Support** StartIsback, Start10, Start8, Open-Shell, Classic Shell, Explorer7ForWin8, Windows 7 StartMenu<br>
 <br>
