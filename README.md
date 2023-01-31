@@ -1,33 +1,45 @@
 # PinUtil : Pin To TaskBar And StartMenu Utility
 
-**Usage1:** PinUtil (TaskBar|StartMenu) File ["File 2" "File 9"]<br>
-<br>
-Ex1: PinUtil TaskBar %windir%\System32\calc.exe<br>
-Ex2: PinUtil StartMenu "C:\Windows\System32\notepad.exe" "%windir%\System32\calc.exe"<br>
-<br>
-**Usage2:** PinUtil Config ConfigFile [Section (Default=PinUtil)]<br>
-<br>
-Ex: PinUtil Config %windir%\System32\PintUtil.ini<br>
-<br>
-PinUtil.ini (Limited To 9 Elements For TaskBar And StartMenu):<br>
-> [PinUtil]<br>
-> StartMenu1=%AllPrograms%\Accessories\Paint.lnk<br>
-> StartMenu0=%WinDir%\Explorer.exe<br>
-> TaskBar0=%SystemRoot%\System32\cmd.exe<br>
-> TaskBar9=%SystemRoot%\Explorer.exe<br>
-<br>
+## Usage 1 :
+PinUtil (TaskBar|StartMenu) File ["File 2" "File 9"]<br>
 
-**Usage3:** Pecmd ConfigFile [SubSection (Default=PinUtil)]   (_SUB SubSection)<br>
+```
+Ex1: PinUtil TaskBar %windir%\System32\calc.exe
+Ex2: PinUtil StartMenu "C:\Windows\System32\notepad.exe" "%windir%\System32\calc.exe"
+```
+
+## Usage 2 :
+PinUtil Config ConfigFile [Section (Default=PinUtil)]<br>
+
+```
+Ex: PinUtil Config %windir%\System32\PintUtil.ini
+```
+PinUtil.ini (Limited To 9 Elements For TaskBar And StartMenu):<br>
+
+```
+[PinUtil]
+StartMenu1=%AllPrograms%\Accessories\Paint.lnk
+StartMenu0=%WinDir%\Explorer.exe
+TaskBar0=%SystemRoot%\System32\cmd.exe
+TaskBar9=%SystemRoot%\Explorer.exe
+```
+
+## Usage 3 :
+Pecmd ConfigFile [SubSection (Default=PinUtil)]   (_SUB SubSection)<br>
 Pecmd is a command interpreter commonly used in WinPE (Windows PE)<br>
-<br>
-Ex: PinUtil Pecmd %windir%\System32\Pecmd.ini PinUtil<br>
-<br>
+
+```
+Ex: PinUtil Pecmd %windir%\System32\Pecmd.ini PinUtil
+```
 Pecmd.ini:<br>
-> _SUB PinUtil<br>
-> PINT %AllPrograms%\Accessories\Paint.lnk,StartMenu<br>
-> PINT %WinDir%\Explorer.exe,StartMenu<br>
-> PINT %SystemRoot%\System32\cmd.exe,TaskBar<br>
-> PINT %SystemRoot%\Explorer.exe,TaskBar<br>
+```
+_SUB PinUtil<br>
+  PINT %AllPrograms%\Accessories\Paint.lnk,StartMenu
+  PINT %WinDir%\Explorer.exe,StartMenu
+  PINT %SystemRoot%\System32\cmd.exe,TaskBar
+  PINT %SystemRoot%\Explorer.exe,TaskBar
+```
+
 <br>
 
 **Environment Variables are Available As Well As:**<br>
