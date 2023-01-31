@@ -33,7 +33,7 @@ Ex: PinUtil Pecmd %windir%\System32\Pecmd.ini PinUtil
 ```
 Pecmd.ini:<br>
 ```
-_SUB PinUtil<br>
+_SUB PinUtil
   PINT %AllPrograms%\Accessories\Paint.lnk,StartMenu
   PINT %WinDir%\Explorer.exe,StartMenu
   PINT %SystemRoot%\System32\cmd.exe,TaskBar
